@@ -29,4 +29,17 @@ Input: s = "(]"
 Output: false
 """
 
-""
+"""
+SOLUTION:
+
+- Use a stack and a hashmap
+- Map closing brackets to their matching opening brackets
+- Iterate through each character in the string:
+  - If it's an opening bracket, push it onto the stack
+  - If it's a closing bracket:
+    - Check if the stack is empty or the top doesn't match → return false
+    - Otherwise, pop the stack
+- At the end, return true if the stack is empty
+
+"""
+
