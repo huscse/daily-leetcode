@@ -43,3 +43,23 @@ SOLUTION:
 
 """
 
+def isValid(s):
+    stk = []
+    mapping = {')': '(', ']': '[', '}': '{'}
+    
+    for ch in s:
+        if ch in mapping:
+            if stk and stk[-1] == mapping[ch]:
+                stk.pop()
+
+            else:
+                 return False
+        else:
+            stk.append(ch)
+
+    return not stk
+
+# Time: O(n) - iterate through the string once
+# each ch is pushed/popped from the stack at most once
+
+# Space: O(n) - worst case, all ch's are stored in the stack
