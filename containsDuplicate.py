@@ -52,3 +52,6 @@ def containsDuplicate(nums):
         seen.add(num)
 
     return False
+
+# Time: O(n) - loop through each element once
+# Space: O(n) - in the worst case all elements are stored in the set
