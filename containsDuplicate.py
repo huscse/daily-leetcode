@@ -34,5 +34,10 @@ Output: true
 """
 SOLUTION:
 
+- Use a set - a set does not contain any duplicates
+- Loop through the array and see if the num exists in the set
+- If yes then the current value is a duplicate - return True
+- If no, we add the num to the set 
+- Return False and in the end
 
 """
