@@ -17,6 +17,16 @@ Example 2:
 
 Input: prices = [7,6,4,3,1]
 Output: 0
-Explanation: In this case, no transactions are done and the max profit = 0.
+Explanation: In this case, no transactions are done and the max profit = 0.1
+
 """
 
+"""
+Solution:
+- Use two variables: `buy_at` to track the lowest stock price so far, and `max_profit` to track the maximum profit.
+- Loop through the array of prices.
+- Update `buy_at` whenever a smaller price is found.
+- For each price, calculate the profit by subtracting `buy_at` from the current price.
+- Update `max_profit` if the calculated profit is greater than the current `max_profit`.
+- Return `max_profit`.
+"""
