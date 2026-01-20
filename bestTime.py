@@ -30,3 +30,17 @@ Solution:
 - Update `max_profit` if the calculated profit is greater than the current `max_profit`.
 - Return `max_profit`.
 """
+
+
+def maxProfit(prices):
+    buy_at = float('inf')
+    max_profit = 0
+
+    for price in prices:
+        if price < buy_at:
+            buy_at = price
+
+        profit = price - buy_at
+        max_profit = max(profit, max_profit)
+
+    return max_profit
