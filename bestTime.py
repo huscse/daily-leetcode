@@ -46,3 +46,7 @@ def maxProfit(prices):
 
 print(maxProfit([7,1,5,3,6,4]))
 print(maxProfit([7,6,4,3,1]))
+
+
+# Time Complexity: O(n) — we loop through the prices array once
+# Space Complexity: O(1) — constant space; only a few variables are used
