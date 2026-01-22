@@ -64,3 +64,6 @@ def validPalindrome(s):
 print(validPalindrome("A man, a plan, a canal: Panama"))
 print(validPalindrome("race a car"))
 print(validPalindrome(" "))
+
+# Time: O(n) -> each char is visited at most once
+# Space: O(1) -> no extra string is created, no extra memory used
