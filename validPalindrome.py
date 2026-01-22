@@ -59,3 +59,8 @@ def validPalindrome(s):
         r -= 1
 
     return True
+
+
+print(validPalindrome("A man, a plan, a canal: Panama"))
+print(validPalindrome("race a car"))
+print(validPalindrome(" "))
