@@ -51,3 +51,6 @@ def collatz_sequence(n):
 
 print(collatz_sequence(6))
 
+# Time: O(T(n)) -> where T(n) is the function
+# space: O(1) -> constant, no extra memory used
+
