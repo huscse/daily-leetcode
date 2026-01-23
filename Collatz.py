@@ -49,3 +49,5 @@ def collatz_sequence(n):
 
     return count
 
+print(collatz_sequence(6))
+
