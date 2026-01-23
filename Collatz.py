@@ -37,3 +37,15 @@ Solution:
  - Return the counter once n reaches 1
 """
 
+def collatz_sequence(n):
+    count = 0
+    while n != 1:
+        if n % 2 == 0: # n is even -> n / 2
+            n = n / 2
+            count += 1
+        else:         # n is odd -> 3(n) + 1
+            n = 3*n + 1
+            count += 1
+
+    return count
+
