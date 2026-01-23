@@ -41,16 +41,17 @@ def collatz_sequence(n):
     count = 0
     while n != 1:
         if n % 2 == 0: # n is even -> n / 2
-            n = n / 2
-            count += 1
+            n = n // 2
         else:          # n is odd -> 3(n) + 1
             n = 3*n + 1
-            count += 1
+
+        count += 1
 
     return count
 
 print(collatz_sequence(6))
 
-# Time: O(T(n)) -> where T(n) is the function
-# space: O(1) -> constant, no extra memory used
+# Time Complexity: O(k), where k is the number of steps required to reach 1
+# Space Complexity: O(1), constant extra space
+
 
