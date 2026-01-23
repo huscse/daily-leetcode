@@ -25,3 +25,15 @@ Sequence: 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1
 
 Output: 8 (it took 8 steps)
 """
+
+"""
+Solution:
+ - Start with the integer n
+ - Repeat the process until n becomes 1
+ - Keep a counter to track the number of operations
+ - If n is even, replace it with n / 2
+ - If n is odd, replace it with 3n + 1
+ - Increment the counter after each operation
+ - Return the counter once n reaches 1
+"""
+
