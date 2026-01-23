@@ -43,7 +43,7 @@ def collatz_sequence(n):
         if n % 2 == 0: # n is even -> n / 2
             n = n / 2
             count += 1
-        else:         # n is odd -> 3(n) + 1
+        else:          # n is odd -> 3(n) + 1
             n = 3*n + 1
             count += 1
 
