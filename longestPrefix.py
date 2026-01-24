@@ -82,5 +82,8 @@ def longestPrefix(nums):
 
     return count
 
+print(longestPrefix([1, 3, 5, 7, 6, 8]))
+print(longestPrefix([]))
+print(longestPrefix([2, 3, 5, 7]))
 
 
