@@ -46,3 +46,17 @@ Solution:
      - If a character’s count is 1, return its index
  - If no such character exists, return -1
 """
+
+def firstUniqChar(s):
+    freq = {}
+
+    # First pass: count character frequencies
+    for ch in s:
+        freq[ch] = freq.get(ch, 0) + 1
+
+    # Second pass: find first character with count 1
+    for i, ch in enumerate(s):
+        if freq[ch] == 1:
+            return i
+
+    return -1
