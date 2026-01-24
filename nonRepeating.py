@@ -36,5 +36,13 @@ s = "aabb"
 
 Output:
 -1
+"""
 
+"""
+Solution:
+ - Use a hashmap to store each character and its frequency
+ - Loop through the string and update counts in the hashmap
+ - Loop through the string again in order:
+     - If a character’s count is 1, return its index
+ - If no such character exists, return -1
 """
