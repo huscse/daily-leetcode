@@ -55,3 +55,15 @@ Input: list of integers (may be empty)
 Output: integer length of the longest increasing prefix
 """
 
+
+"""
+Solution:
+ - If the array is empty, return 0
+ - Initialize a count to 1 (the first element always counts)
+ - Loop through the array starting from the second element
+ - If the current element is greater than the previous element:
+     - Increment the count
+ - Otherwise:
+     - Stop the loop and return the count
+ - Return the count
+"""
