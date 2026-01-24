@@ -50,11 +50,11 @@ Solution:
 def firstUniqChar(s):
     freq = {}
 
-    # First pass: count character frequencies
+    # count character frequencies
     for ch in s:
         freq[ch] = freq.get(ch, 0) + 1
 
-    # Second pass: find first character with count 1
+    # find first character with count 1
     for i, ch in enumerate(s):
         if freq[ch] == 1:
             return i
@@ -65,3 +65,7 @@ def firstUniqChar(s):
 print(firstUniqChar("leetcode"))       
 print(firstUniqChar("loveleetcode"))   
 print(firstUniqChar("aabb"))           
+
+# Time: O(n) -> we scan the string twice
+
+# Space: O(1) —> the hashmap stores at most a fixed number of characters (e.g. 26 lowercase letters)
