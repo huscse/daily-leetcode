@@ -86,7 +86,7 @@ print(longestPrefix([1, 3, 5, 7, 6, 8]))
 print(longestPrefix([]))
 print(longestPrefix([2, 3, 5, 7]))
 
-# Time: O(n) -> loop through array once
-# Space: O(1) -> constant, no extra memory used
+# Time Complexity: O(n) —> in the worst case, we scan the array once
+# Space Complexity: O(1) —> only a few variables are used, no extra data structures
 
 
