@@ -76,7 +76,7 @@ def longestPrefix(nums):
     for i in range(1, len(nums)):
         if nums[i] > nums[i - 1]:
             count += 1
-            continue
+
         else:
             break
 
@@ -85,5 +85,8 @@ def longestPrefix(nums):
 print(longestPrefix([1, 3, 5, 7, 6, 8]))
 print(longestPrefix([]))
 print(longestPrefix([2, 3, 5, 7]))
+
+# Time: O(n) -> loop through array once
+# Space: O(1) -> constant, no extra memory used
 
 
