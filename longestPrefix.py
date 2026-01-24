@@ -55,7 +55,6 @@ Input: list of integers (may be empty)
 Output: integer length of the longest increasing prefix
 """
 
-
 """
 Solution:
  - If the array is empty, return 0
@@ -67,3 +66,21 @@ Solution:
      - Stop the loop and return the count
  - Return the count
 """
+
+def longestPrefix(nums):
+    count = 1
+
+    if len(nums) == 0:
+        return 0
+    
+    for i in range(1, len(nums)):
+        if nums[i] > nums[i - 1]:
+            count += 1
+            continue
+        else:
+            break
+
+    return count
+
+
+
