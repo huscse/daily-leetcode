@@ -60,3 +60,8 @@ def firstUniqChar(s):
             return i
 
     return -1
+
+
+print(firstUniqChar("leetcode"))       
+print(firstUniqChar("loveleetcode"))   
+print(firstUniqChar("aabb"))           
