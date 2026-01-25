@@ -19,6 +19,13 @@ Examples
 
 Input:
 [0, 1, 0, 3, 12]
+ p  i
+[1, 0, 0, 3, 12]
+       p      i
+[1, 3, 0, 0, 12]
+       p      i
+[1, 3, 12, 0, 0]
+
 
 Output:
 [1, 3, 12, 0, 0]
@@ -35,3 +42,15 @@ Input:
 Output:
 [1, 2, 3]
 """
+
+"""
+Solution:
+ - Use a pointer (pos) to track where the next non-zero should go
+ - Loop through the array from left to right
+ - When you see a non-zero:
+     - Place it at index pos
+     - Increment pos
+ - After the loop, fill the remaining positions (from pos to end) with zeros
+
+"""
+
