@@ -71,3 +71,6 @@ def moveZeros(nums):
 print(moveZeros([0, 1, 0, 3, 12]))
 print(moveZeros([1, 2, 3]))
 
+
+# Time: O(n) —> we go through the array once to move non-zeros and once to fill zeros (still linear)
+# Space: O(1) —> we only use a few variables and modify the array in place, no extra data structures
