@@ -83,3 +83,6 @@ def majorityElement(nums):
 
 print(majorityElement([3, 2, 3]))
 print(majorityElement([2, 2, 1, 1, 1, 2, 2]))
+
+# Time: O(n) — one pass through the array
+# Space: O(1) — only two variables used
