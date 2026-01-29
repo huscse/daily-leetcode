@@ -35,3 +35,21 @@ Solution:
  - Keep track of the element with the maximum count
  - Return the element whose count is greater than n // 2
 """
+
+
+def majorityElement(nums):
+    freq = {}
+
+    for num in nums:
+        freq[num] = freq.get(num, 0) + 1
+
+    max_count = 0
+    maj = None
+
+    for num, count in freq.items():
+        if count > max_count:
+            max_count = count
+            maj = num
+
+    return maj
+
