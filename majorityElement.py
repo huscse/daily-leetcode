@@ -27,3 +27,11 @@ Input:
 
 Output: 2
 """
+
+""" 
+Solution:
+ - Create a hashmap to store each number and its frequency
+ - Loop through the array and update counts in the hashmap
+ - Keep track of the element with the maximum count
+ - Return the element whose count is greater than n // 2
+"""
