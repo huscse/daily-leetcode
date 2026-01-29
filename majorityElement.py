@@ -37,25 +37,49 @@ Solution:
 """
 
 
-def majorityElement(nums):
-    freq = {}
+# def majorityElement(nums):
+#     freq = {}
 
-    for num in nums:
-        freq[num] = freq.get(num, 0) + 1
+#     for num in nums:
+#         freq[num] = freq.get(num, 0) + 1
 
-    max_count = 0
-    maj = None
+#     max_count = 0
+#     maj = None
 
-    for num, count in freq.items():
-        if count > max_count:
-            max_count = count
-            maj = num
+#     for num, count in freq.items():
+#         if count > max_count:
+#             max_count = count
+#             maj = num
 
-    return maj
+#     return maj
 
-print(majorityElement([3, 2, 3]))
-print(majorityElement([2, 2, 1, 1, 1, 2, 2]))
+# print(majorityElement([3, 2, 3]))
+# print(majorityElement([2, 2, 1, 1, 1, 2, 2]))
 
 # Time: O(n) —> we scan the array to count elements (and check counts)
 
 # Space: O(n) —> the hashmap stores up to `n` unique elements
+
+
+# Better sol:
+
+def majorityElement(nums):
+    candidate = None
+    count = 0
+
+    for num in nums:
+        if count == 0:
+            candidate = num
+            count = 1
+
+        elif num == candidate:
+            count += 1
+
+        else:
+            count -= 1
+
+    return candidate
+
+
+print(majorityElement([3, 2, 3]))
+print(majorityElement([2, 2, 1, 1, 1, 2, 2]))
