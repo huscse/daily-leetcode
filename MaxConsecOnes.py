@@ -55,3 +55,6 @@ def MaxOnes(nums):
             count = 0
 
     return max_count
+
+print(MaxOnes([1, 0, 1, 1, 0, 1]))
+print(MaxOnes([1, 1, 0, 1, 1, 1]))
