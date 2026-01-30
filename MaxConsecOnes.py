@@ -27,5 +27,16 @@ Input:
 [0, 0, 0]
 
 Output: 0
-
 """ 
+
+"""
+Solution:
+ - Initialize current_count = 0 and max_count = 0
+ - Loop through the array:
+     - If the number is 1:
+         - Increment current_count
+         - Update max_count if current_count is larger
+     - If the number is 0:
+         - Reset current_count to 0
+ - Return max_count
+"""
