@@ -40,3 +40,18 @@ Solution:
          - Reset current_count to 0
  - Return max_count
 """
+
+def MaxOnes(nums):
+    count = 0
+    max_count = 0
+
+    for num in nums:
+        if num == 1:
+            count += 1
+            if count > max_count:
+                max_count = count
+        
+        elif num == 0:
+            count = 0
+
+    return max_count
