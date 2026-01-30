@@ -57,7 +57,6 @@ Solution:
 # print(majorityElement([2, 2, 1, 1, 1, 2, 2]))
 
 # Time: O(n) —> we scan the array to count elements (and check counts)
-
 # Space: O(n) —> the hashmap stores up to `n` unique elements
 
 
