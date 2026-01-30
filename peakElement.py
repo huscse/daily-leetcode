@@ -40,3 +40,24 @@ Solution:
 -  Check the last element:
     - if nums[n-1] > nums[n-2], return n-1
 """
+
+def findPeakElement(nums):
+    n = len(nums)
+
+    # Case 1: only one element
+    if n == 1:
+        return 0
+
+    # Case 2: first element is a peak
+    if nums[0] > nums[1]:
+        return 0
+
+    # Case 3: last element is a peak
+    if nums[n - 1] > nums[n - 2]:
+        return n - 1
+
+    # Case 4: check middle elements
+    for i in range(1, n - 1):
+        if nums[i] > nums[i - 1] and nums[i] > nums[i + 1]:
+            return i
+
