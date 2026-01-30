@@ -58,3 +58,7 @@ def MaxOnes(nums):
 
 print(MaxOnes([1, 0, 1, 1, 0, 1]))
 print(MaxOnes([1, 1, 0, 1, 1, 1]))
+
+
+# Time: O(n) —> one pass through the array
+# Space: O(1) —> only counters, no extra data structures
