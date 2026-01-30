@@ -1,6 +1,6 @@
 """
     01 / 30 / 2026 - Problem: Find the Peak Element
-    
+
 Write a function that takes an array of integers nums and returns the index of any peak element.
 
 A peak element is an element that is strictly greater than its neighbors.
@@ -27,3 +27,16 @@ Input:
 
 Output: 1 or 5 (both are valid peaks)
 """ 
+
+
+"""
+Solution:
+ - Loop through the array
+ - If the array has 1 element, that index (0) is a peak
+-  Check the first element:
+    - if nums[0] > nums[1], return 0
+-  Check the middle elements (1 to n-2):
+    - if nums[i] > nums[i-1] AND nums[i] > nums[i+1], return i
+-  Check the last element:
+    - if nums[n-1] > nums[n-2], return n-1
+"""
