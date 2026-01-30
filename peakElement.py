@@ -61,3 +61,5 @@ def findPeakElement(nums):
         if nums[i] > nums[i - 1] and nums[i] > nums[i + 1]:
             return i
 
+# Time: O(n) —> one scan
+# Space: O(1) —> no extra memory
