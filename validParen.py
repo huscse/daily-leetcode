@@ -59,7 +59,5 @@ def isValid(s):
 
     return not stk
 
-# Time: O(n) - iterate through the string once
-# each ch is pushed/popped from the stack at most once
-
-# Space: O(n) - worst case, all ch's are stored in the stack
+# Time: O(n) -> each ch is pushed/popped from the stack at most once
+# Space: O(n) -> worst case, all ch's are stored in the stack
