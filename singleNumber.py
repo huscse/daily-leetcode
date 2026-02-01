@@ -50,3 +50,8 @@ print(singleNumber([4, 1, 2, 1, 2]))
 print(singleNumber([2, 2, 1]))
 
 
+# Time: O(n) —> we iterate through the array to build the frequency map
+# Space: O(n) —> the hashmap can store up to n unique elements
+
+
+
