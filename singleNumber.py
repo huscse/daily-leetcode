@@ -46,6 +46,7 @@ def singleNumber(nums):
         if value == 1:
             return item
         
-
+print(singleNumber([4, 1, 2, 1, 2]))
+print(singleNumber([2, 2, 1]))
 
 
