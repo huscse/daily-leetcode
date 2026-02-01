@@ -36,3 +36,16 @@ Solution:
  - Loop through the hashmap
  - Return the number whose frequency is exactly 1
 """
+
+def singleNumber(nums):
+    freq = {}
+    for num in nums:
+        freq[num] = freq.get(num, 0) + 1
+
+    for item, value in freq.items():
+        if value == 1:
+            return item
+        
+
+
+
