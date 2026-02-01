@@ -37,17 +37,15 @@ Solution:
  - Return the number whose frequency is exactly 1
 """
 
-def singleNumber(nums):
-    freq = {}
-    for num in nums:
-        freq[num] = freq.get(num, 0) + 1
+# def singleNumber(nums):
+#     freq = {}
+#     for num in nums:
+#         freq[num] = freq.get(num, 0) + 1
 
-    for item, value in freq.items():
-        if value == 1:
-            return item
+#     for item, value in freq.items():
+#         if value == 1:
+#             return item
         
-print(singleNumber([4, 1, 2, 1, 2]))
-print(singleNumber([2, 2, 1]))
 
 
 # Time: O(n) —> we iterate through the array to build the frequency map
@@ -55,3 +53,12 @@ print(singleNumber([2, 2, 1]))
 
 
 
+def singleNumber(nums):
+    result = 0
+    for num in nums:
+        result ^= num
+
+    return result
+
+print(singleNumber([4, 1, 2, 1, 2]))
+print(singleNumber([2, 2, 1]))
