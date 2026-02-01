@@ -29,3 +29,10 @@ Input: [1]
 
 Output: 1
 """
+
+""" 
+Solution:
+ - Use a hashmap to count the frequency of each number
+ - Loop through the hashmap
+ - Return the number whose frequency is exactly 1
+"""
