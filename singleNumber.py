@@ -52,7 +52,6 @@ Solution:
 # Space: O(n) —> the hashmap can store up to n unique elements
 
 
-
 def singleNumber(nums):
     result = 0
     for num in nums:
@@ -62,3 +61,6 @@ def singleNumber(nums):
 
 print(singleNumber([4, 1, 2, 1, 2]))
 print(singleNumber([2, 2, 1]))
+
+# Time: O(n) -> We iterate through the array 
+# Space: O(1) -> No extra memory used
