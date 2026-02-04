@@ -15,7 +15,7 @@ The second largest must be distinct from the largest
 
 Examples
 
-Input: 10, 5, 20, 8]
+Input: [10, 5, 20, 8]
 
 Output: 10
 
@@ -74,3 +74,8 @@ def secondLargest(nums):
             
     
     return second
+
+
+print(secondLargest([5, 1, 5, 3]))
+print(secondLargest([10, 5, 20, 8]))
+print(secondLargest([3, 3, 3]))
