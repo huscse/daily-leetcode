@@ -22,12 +22,6 @@ Output: [24, 12, 8, 6]
 Input: [2, 3, 4, 5]
 
 Output: [60, 40, 30, 24]
-
-Output: None
-
-Input: [5, 1, 5, 3]
-
-Output: 3
 """
 
 """
@@ -43,3 +37,19 @@ Output: 3
     output[i] = output[i] * right
     right = right * nums[i]
 """
+
+def productExceptSelf(nums):
+    n = len(nums)
+    output = [1] * n
+
+    for i in range(1, len(nums)):
+        output[i] = output[i - 1] * nums[i - 1]
+
+    right = 1
+
+    for i in range(n - 1, -1, -1):
+        output[i] *= right
+        right *= nums[i]
+
+    return output
+
