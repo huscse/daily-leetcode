@@ -53,3 +53,5 @@ def productExceptSelf(nums):
 
     return output
 
+print(productExceptSelf([2, 3, 4, 5]))
+print(productExceptSelf([1, 2, 3, 4]))
