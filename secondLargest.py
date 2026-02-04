@@ -55,3 +55,22 @@ Solution:
      - Return None
  - Otherwise, return second_largest
 """
+
+
+def secondLargest(nums):
+    largest = float('-inf')
+    second = float('-inf')
+
+    for num in nums:
+        if num > largest:
+            second = largest
+            largest = num
+
+        elif num < largest and num > second:
+            second = num
+
+    if second == float('-inf'):
+        return None
+            
+    
+    return second
