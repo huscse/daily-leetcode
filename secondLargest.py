@@ -79,3 +79,6 @@ def secondLargest(nums):
 print(secondLargest([5, 1, 5, 3]))
 print(secondLargest([10, 5, 20, 8]))
 print(secondLargest([3, 3, 3]))
+
+# Time: O(n) -> we loop through the array once
+# Space: O(1) -> You only use two variables (largest and second), no extra memory
