@@ -55,3 +55,6 @@ def productExceptSelf(nums):
 
 print(productExceptSelf([2, 3, 4, 5]))
 print(productExceptSelf([1, 2, 3, 4]))
+
+# Time: O(n) —> two linear passes
+# Space: O(1) -> extra space (output array excluded)
