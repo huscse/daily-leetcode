@@ -29,3 +29,17 @@ Input: [5, 1, 5, 3]
 
 Output: 3
 """
+
+"""
+ Solution: 
+  - Make output array
+  - Set output[0] = 1
+  - For i from 1 to n-1:
+    output[i] = output[i-1] * nums[i-1]
+
+  Pass 2: multiply by “right products”:
+  - Set right = 1
+  - For i from n-1 down to 0:
+    output[i] = output[i] * right
+    right = right * nums[i]
+"""
