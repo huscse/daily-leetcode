@@ -40,4 +40,18 @@ Solution:
  - Return the number whose frequency is exactly 1
 """
 
-
+""" 
+Solution:
+ - Initialize two variables:
+     - largest = -infinity
+     - second_largest = -infinity
+ - Loop through the array:
+     - If num > largest:
+         - Set second_largest = largest
+         - Set largest = num
+     - Else if num < largest AND num > second_largest:
+         - Set second_largest = num
+ - If second_largest is still -infinity:
+     - Return None
+ - Otherwise, return second_largest
+"""
