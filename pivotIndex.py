@@ -26,3 +26,15 @@ Input:
 Output: 0
 Left sum = 0, right sum = 1 + (-1) = 0
 """
+
+""" 
+Solution:
+ - Compute the total sum of the array
+ - Initialize leftSum = 0
+ - Iterate through the array by index i:
+     - Compute rightSum = totalSum - leftSum - nums[i]
+     - If leftSum == rightSum:
+         - Return i as the pivot index
+     - Update leftSum += nums[i]
+ - If no pivot index is found, return -1
+"""
