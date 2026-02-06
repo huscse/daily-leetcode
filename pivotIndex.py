@@ -52,3 +52,6 @@ def pivotIndex(nums):
         leftSum += nums[i]
         
     return -1 # no pivot
+
+print(pivotIndex([1, 7, 3, 6, 5, 6]))
+print(pivotIndex([2, 1, -1]))
