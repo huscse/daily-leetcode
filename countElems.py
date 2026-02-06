@@ -47,3 +47,4 @@ def countElems(nums):
 
     return result
 
+print(countElems([8, 1, 2, 2, 3]))
