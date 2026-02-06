@@ -35,3 +35,15 @@ Solution:
              - Increment result[i]
  - Return result
 """
+
+def countElems(nums):
+    n = len(nums)
+    result = [0] * n
+
+    for i in range(len(nums)):
+        for j in range(len(nums)):
+            if nums[j] < nums[i]:
+                result[i] += 1
+
+    return result
+
