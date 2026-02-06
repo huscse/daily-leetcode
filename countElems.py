@@ -25,3 +25,13 @@ Explanation:
 
 3 → three numbers smaller (1,2,2)
 """
+
+""" 
+Solution:
+ - Create a result array filled with 0s
+ - For each index i in nums:
+     - Loop through nums again:
+         - If nums[j] < nums[i]:
+             - Increment result[i]
+ - Return result
+"""
