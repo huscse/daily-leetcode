@@ -55,3 +55,6 @@ def pivotIndex(nums):
 
 print(pivotIndex([1, 7, 3, 6, 5, 6]))
 print(pivotIndex([2, 1, -1]))
+
+# Time: O(n) -> One pass
+# Space: O(1) -> Constant, no extra memory used
