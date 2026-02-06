@@ -38,3 +38,17 @@ Solution:
      - Update leftSum += nums[i]
  - If no pivot index is found, return -1
 """
+
+def pivotIndex(nums):
+    totalSum = sum(nums)
+    leftSum = 0
+
+    for i in range(len(nums)):
+        rightSum = totalSum - leftSum - nums[i]
+
+        if leftSum == rightSum:
+            return i
+        
+        leftSum += nums[i]
+        
+    return -1 # no pivot
