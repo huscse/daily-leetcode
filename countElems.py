@@ -48,3 +48,6 @@ def countElems(nums):
     return result
 
 print(countElems([8, 1, 2, 2, 3]))
+
+# Time: O(n^2) -> nested loops
+# Space: O(n) -> result array
