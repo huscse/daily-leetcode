@@ -67,4 +67,17 @@ def maxDepth(root):
 
     return 1 + max(leftDepth, rightDepth)
 
+def minDepth(root):
+    if root is None:
+        return 0
     
+    leftDepth = minDepth(root.left)
+    rightDepth = minDepth(root.right)
+    
+    if root.left is None:
+        return 1 + rightDepth
+    
+    if root.right is None:
+        return 1 + leftDepth
+    
+    return 1 + min(leftDepth, rightDepth)
