@@ -12,3 +12,21 @@ def invertTree(root):
     invertTree(root.right)
 
     return root
+
+
+# Path Sum
+
+# Given the root of a binary tree and an integer targetSum,
+# return True if the tree has a root-to-leaf path such that:
+
+def hasPathSum(root, targetSum):
+    if root is None:
+        return False
+    
+    diff = targetSum - root.val
+
+    if root.left is None and root.right is None:
+        return diff == 0
+        
+
+    return hasPathSum(root.left, diff) or hasPathSum(root.right, diff)
