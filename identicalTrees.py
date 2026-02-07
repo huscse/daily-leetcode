@@ -25,3 +25,6 @@ def isSameTree(p, q):
         return False
     
     return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+
+# Time: O(n)
+# Space: O(h)
