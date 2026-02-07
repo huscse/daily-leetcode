@@ -1,28 +1,39 @@
 """
     02 / 06 / 2026 - Contains Nearby Duplicate
 
-Given an array of integers nums, return the pivot index where:
+Given an array of integers nums and an integer k, return True if there are two different indices i and j such that:
 
-The sum of all elements to the left of the index equals
+nums[i] == nums[j]
 
-The sum of all elements to the right of the index
+|i - j| <= k
 
-If multiple pivot indices exist, return the leftmost one.
-If none exist, return -1.
+Otherwise, return False.
 
 Examples
 
 Input:
-[1, 7, 3, 6, 5, 6]
-Output: 3
-Left sum = 1+7+3 = 11, right sum = 5+6 = 11
+nums = [1,2,3,1], k = 3
+Output: True
+(duplicate 1 within distance 3)
 
 Input:
-[1, 2, 3]
-Output: -1
+nums = [1,0,1,1], k = 1
+Output: True
 
 Input:
-[2, 1, -1]
-Output: 0
-Left sum = 0, right sum = 1 + (-1) = 0
+nums = [1,2,3,1,2,3], k = 2
+Output: False
+"""
+
+"""
+Solution:
+ - Create a hashmap to store:
+     number → last index seen
+ - Loop through the array with index i:
+     - If number is already in the map:
+         - Compute distance = i - last_seen_index
+         - If distance <= k:
+             - Return True
+     - Update the map with current index
+ - Return False if no valid pair found
 """
