@@ -48,3 +48,23 @@ def isSameTree(p, q):
 #         return(isMirror(left.left, right.right) and isMirror(left.right, right.left))
     
 #     return isMirror(root.left, root.right)
+
+
+# # Given the root of a binary tree, return its maximum depth.
+
+# The maximum depth is the number of nodes along the longest path from the root down to a leaf.
+
+
+# idea: -> look at the left and right subtrees, stop when you can't go down further, every time we can still go further down, we add 1
+# Take the max of both paths that we went
+
+def maxDepth(root):
+    if root is None:
+        return 0
+    
+    leftDepth = maxDepth(root.left)
+    rightDepth = maxDepth(root.right)
+
+    return 1 + max(leftDepth, rightDepth)
+
+    
