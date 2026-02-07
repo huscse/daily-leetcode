@@ -48,3 +48,6 @@ def nearlyDup(nums, k):
         
     return False
 
+print(nearlyDup([1,2,3,1,2,3], 2))
+print(nearlyDup([1,0,1,1], 1))
+print(nearlyDup([1,2,3,1], 3))
