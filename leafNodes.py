@@ -27,3 +27,16 @@ def countLeaves(root):
         return 1
     
     return countLeaves(root.left) + countLeaves(root.right)
+
+
+def contains(root, target):
+    if root is None:
+        return False
+    
+    if root.val == target:
+        return True
+    
+    return contains(root.left, target) or contains(root.right, target)
+
+
+
