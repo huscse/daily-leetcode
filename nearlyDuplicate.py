@@ -51,3 +51,6 @@ def nearlyDup(nums, k):
 print(nearlyDup([1,2,3,1,2,3], 2))
 print(nearlyDup([1,0,1,1], 1))
 print(nearlyDup([1,2,3,1], 3))
+
+# Time: O(n) -> one pass
+# Space: O(n) -> map used
