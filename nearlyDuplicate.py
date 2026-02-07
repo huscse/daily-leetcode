@@ -37,3 +37,14 @@ Solution:
      - Update the map with current index
  - Return False if no valid pair found
 """
+
+def nearlyDup(nums, k):
+    seen = {}
+    for i, num in enumerate(nums):
+        if num in seen and i - seen[num] <= k: # check distance, if <= k return True
+                return True
+        
+        seen[num] = i # add num to map
+        
+    return False
+
