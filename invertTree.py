@@ -30,3 +30,45 @@ def hasPathSum(root, targetSum):
         
 
     return hasPathSum(root.left, diff) or hasPathSum(root.right, diff)
+
+
+def countNodes(root):
+    if root is None:
+        return 0
+    
+    return 1 + countNodes(root.left) + countNodes(root.right)
+
+def sumNodes(root):
+    if root is None:
+        return 0
+    
+    return root.val + sumNodes(root.left) + sumNodes(root.right)
+
+def leafNodes(root):
+    if root is None:
+        return 0
+    
+    if root.left is None and root.right is None:
+        return 1
+    
+    return leafNodes(root.left) + leafNodes(root.right)
+
+
+def countSingleChild(root):
+    if root is None:
+        return 0
+    
+    count = 0
+
+    if (root.left is None and root.right is not None) or \
+       (root.left is not None and root.right is None):
+        count = 1
+    
+    return count + countSingleChild(root.left) + countSingleChild(root.right)
+
+  
+
+
+
+
+    
