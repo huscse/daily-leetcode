@@ -45,5 +45,6 @@ def levelOrder(root):
         # add the level list to the result
         result.append(level)
 
-    # Once the queue is empty, we've processed all levels
+    # Once the queue is empty, we've processed all levels 
+    # and can return result
     return result
