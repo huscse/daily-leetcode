@@ -10,14 +10,20 @@ Time → O(n)
 
 Space → O(width) → worst case O(n)
 
-DFS - Traversals
+# We use BFS when we care about:
 
-We use BFS when we care about:
+## Levels
 
-Levels
+## Shortest path (in graphs)
 
-Shortest path (in graphs)
+## Minimum steps
 
-Minimum steps
+## Layered structure
 
-Layered structure
+# BFS uses a queue.
+
+Why?
+
+Because a queue is:
+
+First In, First Out (FIFO).
