@@ -12,7 +12,6 @@ All corresponding nodes have the same value
 
 """
 
-
 def isSameTree(p, q):
     # If both are null
     if p is None and q is None:
