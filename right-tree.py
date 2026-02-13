@@ -8,7 +8,7 @@ def bfs(root):
     result = []
 
     while queue:
-        node = queue.popleft()
+        node = queue.popleft()   
         result.append(node.val)
 
         if node.left:
