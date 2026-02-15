@@ -41,5 +41,3 @@ Take node from front
 Process it
 
 Add its children to the queue
-
-That’s it.
