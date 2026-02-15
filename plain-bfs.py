@@ -25,7 +25,7 @@ def bfs(root):
 
     return result
 
-
+# Level-order bfs
 def levelOrder(root):
     if root is None:
         return []
@@ -51,5 +51,28 @@ def levelOrder(root):
 
     return result
 
+# Right Side View
+def rightSideView(root):
+    if root is None:
+        return []
+    
+    result = []
+    queue = deque([root])
 
+    while queue:
+        level_size = len(queue)
+
+        for i in range(level_size):
+            node = queue.popleft()
+
+            if i == level_size - 1:
+                result.append(node.val)
+
+            if node.left:
+                queue.append(node.left)
+
+            if node.right:
+                queue.append(node.right)
+
+    return result
         
