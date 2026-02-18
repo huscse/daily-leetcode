@@ -1,5 +1,6 @@
 """"
     02 / 16 / 2026 - Minimum Depth (BFS version)
+    Goes level by level
 """
 
 from collections import deque
