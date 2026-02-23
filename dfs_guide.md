@@ -40,4 +40,4 @@ Take node from front
 
 Process it
 
-Add its children to the queue
+Add its children to the queue.
