@@ -99,3 +99,6 @@ E = number of edges
 
 In undirected graphs you can go both ways but 
 in directed graphs you can go A → B, but not B → A unless there is another arrow
+
+DFS Tree --> A DFS tree always has a leaf
+Removing a leaf does not disconnect the graph
