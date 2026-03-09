@@ -47,7 +47,7 @@ Add its children to the queue.
 1. Adjacency List: Example graph:
 
 A — B
-| |
+|   |
 C — D
 
 Representation:
@@ -102,3 +102,8 @@ in directed graphs you can go A → B, but not B → A unless there is another a
 
 DFS Tree --> A DFS tree always has a leaf
 Removing a leaf does not disconnect the graph
+
+
+An undirected graph has an Eulerian tour iff:
+
+every vertex has even degree
